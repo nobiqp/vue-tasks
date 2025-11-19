@@ -1,0 +1,97 @@
+.container-add {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  background: #fff;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .container-add {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+}
+
+.add-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.add-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: auto;
+  font-weight: 600;
+}
+.add-form .priority-options {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.add-form .priority-options label {
+  flex-direction: row;
+  align-items: center;
+  font-weight: 450;
+}
+.add-form .priority-options input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--accent2);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+.add-form .priority-options input[type=radio]:checked::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: var(--accent2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+}
+.add-form .btn {
+  width: auto;
+  align-self: flex-start;
+}
+.add-form .input {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 3px;
+}
+.dot.high {
+  background-color: #ff4d4d;
+}
+.dot.moderate {
+  background-color: #ffa500;
+}
+.dot.low {
+  background-color: #4caf50;
+}

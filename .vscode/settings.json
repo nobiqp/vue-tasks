@@ -1,0 +1,18 @@
+{
+  "liveSassCompile.settings.showOutputWindowOn": "None",
+
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/app/assets/css"
+    }
+  ],
+  "liveSassCompile.settings.includeItems": [
+    "/app/assets/scss/**/*.scss"
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "/**/node_modules/**"
+  ],
+  
+}
